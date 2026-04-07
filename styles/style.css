@@ -14,7 +14,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -48,9 +48,8 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
-
 
 .result {
   border: 1px dashed red;
@@ -62,50 +61,67 @@ ol {
 
 .content {
   display: grid;
-  padding: 133px 30px;
   grid-template-columns: 1fr 1fr;
   place-content: center;
   column-gap: 30px;
   align-items: end;
-  width: 100%;
-  min-height: 534px;
-  border: 1px solid white;  
+  border: 1px solid white;
+  padding: 0 30px;
 }
 
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: start;  
+  align-items: start;
+}
+
+.search-form__fieldset-title {
+  font-family: Fira Sans Condensed;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
 }
 
 .content__list-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-width: 399px;
   max-height: 298px;
-  overflow-y: auto;  
+  overflow-y: auto;
 }
 
 .content__details {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
   padding-bottom: 26px;
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.content__accent {
+  color: #545050;
 }
 
 .result__video-container {
   width: 711px;
   height: 386px;
-  margin-bottom: 16px; 
+  margin-bottom: 16px;
 }
 
 .result__video {
   width: 100%;
   object-fit: cover;
-  max-height: 386px;  
+  max-height: 386px;
 }
 
 .content__list {
@@ -114,16 +130,46 @@ ol {
   gap: 30px;
 }
 
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+
 .content__video-card {
   display: flex;
-  align-items:start;
-  justify-content: space-between;
+  align-items: start;
+}
+
+.content__video-card-title {
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 196px;
+}
+
+.content__video-card-description {
+  font-family: Fira Sans Condensed;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: 0%;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 196px;
 }
 
 .content__video-card-thumbnail {
   min-width: 194px;
   height: 103px;
-  object-position: right;
+  object-position: center;
   object-fit: cover;
 }
 
