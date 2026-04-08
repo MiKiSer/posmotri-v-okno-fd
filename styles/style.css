@@ -64,25 +64,25 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: start;  
+  align-items: start;
 }
 
 .search-form__fieldset-title {
+  padding-bottom: 8px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: #fff;
 }
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px;  
+  gap: 15px;
 }
 
 .search-form__fieldset {
-  border: none;  
+  border: none;
 }
 
 .search-form__label {
@@ -98,7 +98,6 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
   color: #fff;
   background-color: #1b1919;
   border-top: 1px solid #fff;
@@ -142,7 +141,6 @@ ol {
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
-  letter-spacing: 0%;
   text-transform: uppercase;
   color: #fff;
 }
@@ -161,6 +159,7 @@ ol {
 .result__video {
   width: 100%;
   object-fit: cover;
+  object-position: center;
   max-height: 386px;
 }
 
@@ -185,7 +184,6 @@ ol {
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
-  letter-spacing: 0%;
   text-transform: uppercase;
   overflow: hidden;
   white-space: nowrap;
@@ -198,7 +196,6 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.11;
-  letter-spacing: 0%;
   -webkit-line-clamp: 4;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -226,7 +223,6 @@ ol {
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
   text-align: center;
   color: #fff;
   cursor: pointer;
@@ -246,7 +242,7 @@ ol {
 /* Стилизация элементов */
 
 .search-form__textfield:focus {
-  outline: none; 
+  outline: none;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -279,16 +275,13 @@ ol {
   text-decoration: underline;
 }
 
-.search-form__label:has(.search-form__textfield:hover) {
+.search-form__label:has(.search-form__textfield:hover),
+.search-form__label:has(.search-form__checkbox:active) {
   text-decoration: none;
 }
 
 .search-form__label:has(.search-form__textfield:active) {
   outline: none;
-}
-
-.search-form__label:has(.search-form__checkbox:active) {
-  text-decoration: none;
 }
 
 .search-form__checkbox:active + .search-form__pseudo-checkbox::after {
@@ -322,7 +315,7 @@ ol {
 }
 
 .content__card-link:hover {
-  text-decoration: underline;  
+  text-decoration: underline;
 }
 
 .content__card-link:active {
@@ -336,4 +329,3 @@ ol {
 .content__card-link:focus-visible {
   border: 1px solid #fff;
 }
-
