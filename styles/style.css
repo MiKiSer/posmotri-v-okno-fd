@@ -169,11 +169,6 @@ ol {
   gap: 30px;
 }
 
-.content__card-link {
-  text-decoration: none;
-  color: #fff;
-}
-
 .content__video-card {
   display: flex;
   align-items: start;
@@ -309,17 +304,16 @@ ol {
 .content__card-link {
   display: block;
   cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
-.content__card-link_current {
+.content__card-link_current,
+.content__card-link:active {
   background-color: #545050;
 }
 
 .content__card-link:hover {
   text-decoration: underline;
-}
-
-.content__card-link:active {
-  background-color: #545050;
 }
 
 .content__card-link:focus {
