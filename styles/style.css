@@ -64,7 +64,7 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: start;  
 }
 
 .search-form__fieldset-title {
@@ -78,11 +78,11 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px;
+  gap: 15px;  
 }
 
 .search-form__fieldset {
-  border: none;
+  border: none;  
 }
 
 .search-form__label {
@@ -227,6 +227,7 @@ ol {
   letter-spacing: 0%;
   text-align: center;
   color: #fff;
+  cursor: pointer;
 }
 
 .search-form__submit-button {
@@ -256,6 +257,7 @@ ol {
   height: 19px;
   border: 1px solid #fff;
   padding: 1px;
+  cursor: pointer;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -311,6 +313,7 @@ ol {
 
 .content__card-link {
   display: block;
+  cursor: pointer;
 }
 .content__card-link_current {
   background-color: #545050;
